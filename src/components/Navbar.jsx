@@ -39,7 +39,7 @@ export default function Navbar() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 text-xl font-semibold text-[#2c2118] relative z-[60]">
+          <Link to="/" className="flex items-center gap-3 text-xl font-semibold text-oak relative z-60">
             <img src={"./images/logo2.jpg"} alt="logo" className="h-10 w-10 rounded-3xl" />
           </Link>
 
@@ -61,7 +61,7 @@ export default function Navbar() {
           {/* Mobile toggle — sits above the overlay */}
           <button
             onClick={() => setMenuOpen((o) => !o)}
-            className="relative z-[60] inline-flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full border border-slate-200 md:hidden"
+            className="relative z-60 inline-flex h-11 w-11 flex-col items-center justify-center gap-1.5 rounded-full border border-slate-200 md:hidden"
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
           >

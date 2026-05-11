@@ -51,7 +51,7 @@ function GalleryCategory({ category }) {
       {/* Category header */}
       <div className="mb-8">
         <h2 className="mb-2 text-3xl font-bold text-[#131042]">{category.name}</h2>
-        <div className="h-1 w-16 rounded-full bg-gradient-to-r from-blue-400 to-[#c2a47d]" />
+        <div className="h-1 w-16 rounded-full bg-linear-to-r from-blue-400 to-ore" />
       </div>
 
       {/* Masonry grid */}

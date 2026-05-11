@@ -192,7 +192,7 @@ export default function About() {
                 </div>
               </div>
               <div className="reveal overflow-hidden rounded-3xl shadow-2xl shadow-slate-950/60" data-reveal={i % 2 === 0 ? 'right' : 'left'}>
-                <img src={img} alt={title} className="h-[480px] w-full object-cover transition duration-700 hover:scale-105" />
+                <img src={img} alt={title} className="h-120 w-full object-cover transition duration-700 hover:scale-105" />
               </div>
             </div>
           </div>
@@ -237,7 +237,7 @@ export default function About() {
 
       {/* FULL-WIDTH WORKSHOP IMAGE */}
       <section className="reveal overflow-hidden" data-reveal="fade">
-        <div className="relative h-[60vh] min-h-[400px]">
+        <div className="relative h-[60vh] min-h-100">
           <img src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=2000&q=80" alt="Oak and Ore workshop" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-slate-950/60 flex items-center justify-center">
             <div className="text-center text-white space-y-4 px-6">
@@ -315,7 +315,7 @@ export default function About() {
       <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
         <div className="reveal rounded-4xl overflow-hidden" data-reveal="scale">
           <div className="relative">
-            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=80" alt="Luxury interior" className="h-[500px] w-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=80" alt="Luxury interior" className="h-125 w-full object-cover" />
             <div className="absolute inset-0 bg-[#131042]/85 flex items-center">
               <div className="mx-auto max-w-4xl px-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center w-full">
                 <div className="text-white space-y-5">
