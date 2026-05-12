@@ -131,7 +131,7 @@ export default function About() {
       </section>
 
       {/* BRAND STORY */}
-      <section className="mx-auto max-w-7xl px-6 py-24 sm:px-10 lg:px-16">
+      <section className="mx-auto px-6 py-24 sm:px-10 lg:px-16 bg-[#e4e4e4]">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
           <div className="reveal space-y-7" data-reveal="left">
             <span className="badge-pulse inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-blue-800">
@@ -260,15 +260,14 @@ export default function About() {
           </div>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-reveal-stagger="90">
             {[
-              { icon: '🌿', title: 'Sustainability',      body: 'Responsibly sourced timber, low-VOC finishes, and zero-waste manufacturing practices. We believe beautiful furniture should not cost the earth.' },
-              { icon: '🔨', title: 'Craftsmanship',       body: 'Every joint, every weld, every stitch is executed by a specialist. We do not cut corners — we cut timber, metal, and stone with precision.' },
-              { icon: '🎨', title: 'Design Integrity',    body: 'We never compromise the design to reduce cost. If a detail matters to the piece, it stays — regardless of the complexity it adds to production.' },
-              { icon: '🤝', title: 'Collaboration',       body: 'We work with you, not for you. Your input shapes the outcome at every stage, from the first sketch to the final installation.' },
-              { icon: '⏳', title: 'Longevity',           body: 'We build furniture to last 50 years, not 5. The materials we choose, the joinery we use, and the finishes we apply are all selected for durability.' },
-              { icon: '✨', title: 'Attention to Detail', body: 'The details that most people never notice are the ones we obsess over. Because the people who live with our furniture will notice them every day.' },
+              {title: 'Sustainability',      body: 'Responsibly sourced timber, low-VOC finishes, and zero-waste manufacturing practices. We believe beautiful furniture should not cost the earth.' },
+              {title: 'Craftsmanship',       body: 'Every joint, every weld, every stitch is executed by a specialist. We do not cut corners — we cut timber, metal, and stone with precision.' },
+              {title: 'Design Integrity',    body: 'We never compromise the design to reduce cost. If a detail matters to the piece, it stays — regardless of the complexity it adds to production.' },
+              {title: 'Collaboration',       body: 'We work with you, not for you. Your input shapes the outcome at every stage, from the first sketch to the final installation.' },
+              {title: 'Longevity',           body: 'We build furniture to last 50 years, not 5. The materials we choose, the joinery we use, and the finishes we apply are all selected for durability.' },
+              {title: 'Attention to Detail', body: 'The details that most people never notice are the ones we obsess over. Because the people who live with our furniture will notice them every day.' },
             ].map(({ icon, title, body }) => (
               <div key={title} className="reveal rounded-3xl bg-slate-900 p-8 transition duration-300 hover:-translate-y-2 hover:bg-slate-800" data-reveal="up">
-                <span className="text-4xl">{icon}</span>
                 <h3 className="mt-5 text-xl font-bold">{title}</h3>
                 <p className="mt-4 text-slate-400 leading-7">{body}</p>
               </div>

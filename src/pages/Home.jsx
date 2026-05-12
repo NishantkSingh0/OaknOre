@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* ── Featured Collection ──────────────────────────────────────────── */}
-      <section className="mx-auto px-6 py-20 sm:px-10 lg:px-16 bg-[#c6c6c6]">
+      <section className="mx-auto px-6 py-20 sm:px-10 lg:px-16 bg-[#e4e4e4]">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="reveal space-y-6" data-reveal="left">
             <span className="badge-pulse inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-blue-900">

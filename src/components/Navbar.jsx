@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 text-xl font-semibold text-oak relative z-60">
-            <img src={"./images/logo2.jpg"} alt="logo" className="h-10 w-10 rounded-3xl" />
+            <img src={"./images/logo3.png"} alt="logo" className="h-10 w-10 rounded-3xl" />
           </Link>
 
           {/* Desktop nav */}
