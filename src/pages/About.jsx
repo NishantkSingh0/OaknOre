@@ -117,7 +117,7 @@ export default function About() {
       </section>
 
       {/* STATS BAR */}
-      <section className="bg-[#131042] text-white">
+      <section className="bg-[#090725] text-white">
         <div className="mx-auto max-w-7xl px-6 py-12 sm:px-10 lg:px-16">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4" data-reveal-stagger="80">
             {stats.map(({ value, label }) => (

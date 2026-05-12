@@ -45,8 +45,8 @@ export default function Products() {
       {/* ── Product grid ─────────────────────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
         <div className="reveal mb-12 text-center" data-reveal="fade">
-          <h2 className="text-3xl font-bold text-oak">Our Signature Pieces</h2>
-          <p className="mt-3 text-slate-500">Handcrafted for modern living.</p>
+          <h2 className="text-3xl font-bold text-[#131042]">Our Signature Pieces</h2>
+          <p className="mt-3 text-[#1e1873]">Handcrafted for modern living.</p>
         </div>
         <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3" data-reveal-stagger="70">
           {products.map(({ img, name, desc, category }) => (
@@ -62,8 +62,8 @@ export default function Products() {
                 />
               </div>
               <div className="p-8">
-                <h2 className="text-2xl font-semibold text-oak">{name}</h2>
-                <p className="mt-4 text-slate-600">{desc}</p>
+                <h2 className="text-2xl font-semibold text-[#131042]">{name}</h2>
+                <p className="mt-4 text-[#1e1873]">{desc}</p>
                 <p className="mt-6 text-sm font-bold uppercase tracking-[0.22em] text-[#131042]">{category}</p>
               </div>
             </article>
@@ -78,10 +78,10 @@ export default function Products() {
             <span className="badge-pulse inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-blue-700">
               Custom Creations
             </span>
-            <h2 className="text-4xl font-bold text-oak">
+            <h2 className="text-4xl font-bold text-[#131042]">
               Custom furniture services for signature spaces.
             </h2>
-            <p className="leading-8 text-slate-600">
+            <p className="leading-8 text-[#1e1873]">
               Whether you're designing a boutique studio, a hospitality lounge, or a residential retreat, we can build tailored pieces that feel personal and purposeful.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -93,7 +93,7 @@ export default function Products() {
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 px-7 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 hover:scale-105"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 px-7 py-3 text-sm font-semibold text-[#131042] transition hover:bg-slate-100 hover:scale-105"
               >
                 Explore Services
               </Link>

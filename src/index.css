@@ -12,7 +12,8 @@
   color-scheme: light;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
 }
 

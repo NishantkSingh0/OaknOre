@@ -61,10 +61,10 @@ export default function Contact() {
           {/* Left — info */}
           <div className="reveal space-y-8" data-reveal="left">
             <div className="rounded-4xl bg-white p-10 shadow-xl shadow-slate-200/50">
-              <h2 className="text-4xl font-bold text-oak">
+              <h2 className="text-4xl font-bold text-[#131042]">
                 Let's design your next statement piece.
               </h2>
-              <p className="mt-5 leading-8 text-slate-600">
+              <p className="mt-5 leading-8 text-[#1e1873]">
                 Our studio is based in the heart of the design district. We collaborate with individuals, architects, and brands to create bespoke furniture and finished interiors.
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function Contact() {
           <div className="reveal rounded-4xl bg-white p-10 shadow-xl shadow-slate-200/50" data-reveal="right">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-slate-700">Name</label>
+                <label className="block text-sm font-medium text-[#131042]">Name</label>
                 <input
                   name="name"
                   type="text"
@@ -106,7 +106,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700">Email</label>
+                <label className="block text-sm font-medium text-[#131042]">Email</label>
                 <input
                   name="email"
                   type="email"
@@ -118,7 +118,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700">Project type</label>
+                <label className="block text-sm font-medium text-[#131042]">Project type</label>
                 <select
                   name="project"
                   value={form.project}
@@ -132,7 +132,7 @@ export default function Contact() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700">Message</label>
+                <label className="block text-sm font-medium text-[#131042]">Message</label>
                 <textarea
                   name="message"
                   rows={5}
@@ -155,7 +155,7 @@ export default function Contact() {
       </section>
 
       {/* ── Collaborate dark section ─────────────────────────────────────── */}
-      <section className="bg-slate-950 text-slate-100">
+      <section className=" text-[#131042]">
         <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div className="reveal space-y-6" data-reveal="left">
@@ -163,7 +163,7 @@ export default function Contact() {
                 collaborate
               </span>
               <h2 className="text-4xl font-bold">Create furniture that feels personal.</h2>
-              <p className="leading-8 text-slate-300">
+              <p className="leading-8 text-[#1e1873]">
                 Get in touch for custom builds, consultation, and refined furniture design that reflects your home or brand.
               </p>
             </div>

@@ -30,8 +30,8 @@ export default function Services() {
       {/* ── Service cards ────────────────────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
         <div className="reveal mb-12 text-center" data-reveal="fade">
-          <h2 className="text-3xl font-bold text-oak">What we offer</h2>
-          <p className="mt-3 text-slate-500">End-to-end services for every kind of project.</p>
+          <h2 className="text-3xl font-bold text-[#131042]">What we offer</h2>
+          <p className="mt-3 text-[#1e1873]">End-to-end services for every kind of project.</p>
         </div>
         <div className="grid gap-10 lg:grid-cols-3" data-reveal-stagger="110">
           {[
@@ -46,8 +46,8 @@ export default function Services() {
               <span className="badge-pulse inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-blue-700">
                 {num}
               </span>
-              <h2 className="mt-6 text-3xl font-semibold text-oak">{title}</h2>
-              <p className="mt-4 leading-7 text-slate-600">{desc}</p>
+              <h2 className="mt-6 text-3xl font-semibold text-[#131042]">{title}</h2>
+              <p className="mt-4 leading-7 text-[#1e1873]">{desc}</p>
             </article>
           ))}
         </div>
@@ -101,7 +101,7 @@ export default function Services() {
               </Link>
               <Link
                 to="/departments"
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 px-7 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 hover:scale-105"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 px-7 py-3 text-sm font-semibold text-[#131042] transition hover:bg-slate-100 hover:scale-105"
               >
                 View Departments
               </Link>
