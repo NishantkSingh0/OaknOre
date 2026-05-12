@@ -48,7 +48,7 @@ const techniques = [
     subtitle: 'Colour with depth and durability',
     desc: 'Our painting studio applies everything from raw linseed oil and beeswax finishes to high-gloss automotive lacquers. We use HVLP spray systems for even, drip-free coats and hand-apply specialty finishes like limewash, ceruse, and ebonising for textural depth.',
     detail: 'Multi-coat lacquer systems involve 3–5 layers with inter-coat sanding at 320 grit. Colour matching is done using spectrophotometry to achieve exact RAL or Pantone references. All finishes are low-VOC and tested for scratch, chemical, and UV resistance before sign-off.',
-    img: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=1200&q=80',
+    img: './images/46.png',
     tag: 'Painting Studio',
     accent: 'bg-blue-100 text-blue-800',
   },

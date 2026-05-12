@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
@@ -6,13 +6,15 @@ const navLinks = [
   { label: 'About',       to: '/about' },
   { label: 'Collections', to: '/products' },
   { label: 'Services',    to: '/services' },
-  { label: 'departments',     to: '/departments' },
+  { label: 'Departments',     to: '/departments' },
   { label: 'Contact',     to: '/contact' },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled]  = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const prevScrollY = useRef(0);
   const { pathname } = useLocation();
 
   // Close mobile menu on route change
@@ -25,7 +27,20 @@ export default function Navbar() {
   }, [menuOpen]);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      const isScrollingDown = currentY > prevScrollY.current;
+
+      if (currentY <= 20) {
+        setHidden(false);
+      } else if (Math.abs(currentY - prevScrollY.current) > 10) {
+        setHidden(isScrollingDown);
+      }
+
+      setScrolled(currentY > 20);
+      prevScrollY.current = currentY;
+    };
+
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -33,9 +48,9 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/45 backdrop-blur transition-shadow duration-500 ${
+        className={`fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/45 backdrop-blur transition-all duration-300 ${
           scrolled ? 'shadow-[0_20px_80px_rgba(15,23,42,0.08)]' : ''
-        }`}
+        } ${hidden && !menuOpen ? '-translate-y-full' : 'translate-y-0'}`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* Logo */}
