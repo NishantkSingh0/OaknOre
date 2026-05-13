@@ -65,10 +65,10 @@ const techniques = [
 ];
 
 const stats = [
-  { value: '8+',   label: 'Years of manufacturing excellence' },
-  { value: '120+', label: 'Bespoke projects delivered' },
-  { value: '10',   label: 'Specialist studios under one roof' },
-  { value: '200+', label: 'Artisans and craftspeople' },
+  { value: '2+',   label: 'Years of manufacturing excellence' },
+  { value: '50+', label: 'Bespoke projects delivered' },
+  { value: '8',   label: 'Specialist studios under one roof' },
+  { value: '100+', label: 'Artisans and craftspeople' },
 ];
 
 const process = [
