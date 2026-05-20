@@ -4,7 +4,7 @@ import { useReveal } from '../hooks/useReveal';
 
 const galleryCategories = [
   { name: 'Attelier Shorts',        path: 'Attelier',      count: 3  },
-  { name: 'The Design Studio',      path: 'Design',        count: 5  },
+  { name: 'The Design Studio',      path: 'Design',        count: 8  },
   { name: 'Metal Finishing Studio', path: 'MetalFinishing', count: 6 },
   { name: 'Metalsmith Studio',      path: 'Metalsmith',    count: 10 },
   { name: 'Packing Studio',         path: 'Packing',       count: 3  },
